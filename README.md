@@ -16,5 +16,5 @@ The Russian Ruble exchange rates from Moscow Exchange.
 ### How to use
  - Install ruby
  - Install gem [nokogiri](http://www.nokogiri.org/tutorials/installing_nokogiri.html)
- - Drop the plugin into your BitBar plugins folder
+ - Drop moex.1m.rb file into your BitBar plugins folder
  - Make sure it's executable (in Terminal, do chmod +x moex.1m.rb)
