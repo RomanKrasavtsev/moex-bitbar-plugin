@@ -10,11 +10,11 @@
 require "nokogiri"
 require "open-uri"
 
-def get_exchange_rate *currencies
+def get_exchange_rate emoji, *currencies
   result_string = ""
 
   currencies.each do |currency|
-    pair, sign = get_pair_sign currency
+    pair, sign = get_pair_sign emoji, currency
 
     if pair
       rate = Nokogiri::HTML(open("http://moex.com/ru/derivatives/currency-rate.aspx?currency=#{pair}"))
@@ -32,22 +32,22 @@ def get_exchange_rate *currencies
   result_string
 end
 
-def get_pair_sign currency
+def get_pair_sign emoji, currency
   case currency
   when "USD"
-    pair, sign = ["USD_RUB", "$"]
+    pair, sign  = ["USD_RUB", emoji ? "🇺🇸" : "$"]
   when "EUR"
-    pair, sign = ["EUR_RUB", "€"]
+    pair, sign = ["EUR_RUB", emoji ? "🇪🇺" : "€"]
   when "CHF"
-    pair, sign = ["CHF_RUB", "Fr"]
+    pair, sign = ["CHF_RUB", emoji ? "🇨🇭" : "Fr"]
   when "JPY"
-    pair, sign = ["JPY_RUB", "J¥"]
+    pair, sign = ["JPY_RUB", emoji ? "🇯🇵" : "J¥"]
   when "CNY"
-    pair, sign = ["CNY_RUB", "C¥"]
+    pair, sign = ["CNY_RUB", emoji ? "🇨🇳" : "C¥"]
   when "CAD"
-    pair, sign = ["CAD_RUB", "C$"]
+    pair, sign = ["CAD_RUB", emoji ? "🇨🇦" : "C$"]
   when "TRY"
-    pair, sign = ["TRY_RUB", "₺"]
+    pair, sign  = ["TRY_RUB", emoji ? "🇹🇷" : "₺"]
   else
     pair, sign = [nil, ""]
   end
@@ -62,4 +62,4 @@ end
 # CAD - Canadian dollar
 # TRY - Turkish lira
 
-puts get_exchange_rate "USD", "EUR", "CAD"
+puts get_exchange_rate emoji = true, "USD", "EUR", "CAD"
