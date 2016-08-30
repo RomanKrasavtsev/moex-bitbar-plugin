@@ -8,7 +8,7 @@ The Russian Ruble exchange rates from Moscow Exchange.
 ###Emoji mode
 ![BitBar Example showing MOEX plugin](https://raw.github.com/romankrasavtsev/moex-bitbar-plugin/master/moex_emoji.png)
 
-### Supported currencies:
+### Supported currencies
  - USD - United States dollar - 🇺🇸
  - EUR - Euro 🇪🇺
  - CHF - Swiss franc - 🇨🇭
