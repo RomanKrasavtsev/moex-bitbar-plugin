@@ -4,6 +4,7 @@
 # <bitbar.version>v1.0</bitbar.version>
 # <bitbar.author>Roman Krasavtsev</bitbar.author>
 # <bitbar.author.github>romankrasavtsev</bitbar.author.github>
+# <bitbar.author.github.url>https://github.com/RomanKrasavtsev/moex-bitbar-plugin</bitbar.author.github.url>
 # <bitbar.desc>The Russian Ruble exchange rates from Moscow Exchange</bitbar.desc>
 # <bitbar.dependencies>ruby</bitbar.dependencies>
 
