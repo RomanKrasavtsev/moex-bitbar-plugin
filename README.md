@@ -10,7 +10,7 @@ The Russian Ruble exchange rates from Moscow Exchange.
 
 ### Supported currencies
  - 🇺🇸 USD - United States dollar
- - 🇪🇺 EUR - Euro
+ - 🇪🇺  EUR - Euro
  - CHF 🇨🇭 Swiss franc
  - JPY 🇯🇵 Japanese yen
  - CNY 🇨🇳 Chinese yuan
