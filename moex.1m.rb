@@ -22,7 +22,7 @@ def get_exchange_rate emoji, *currencies
         .css("#ctl00_PageContent_tbxCurrentRate b")
         .to_s.gsub(/<b>/, "").gsub(/<\/b>/, "")
         .gsub(/Текущее значение:  /, "")
-        .slice /\d+,\d./
+        .slice(/\d+,\d./)
     else
       rate = "Unknown sign"
     end
@@ -52,6 +52,8 @@ def get_pair_sign emoji, currency
   else
     pair, sign = [nil, ""]
   end
+
+  [pair, sign]
 end
 
 # Supported currencies:
@@ -63,4 +65,5 @@ end
 # CAD - Canadian dollar
 # TRY - Turkish lira
 
-puts get_exchange_rate emoji = true, "USD", "EUR", "CAD"
+emoji = true
+puts get_exchange_rate emoji, "USD", "EUR", "CAD"
