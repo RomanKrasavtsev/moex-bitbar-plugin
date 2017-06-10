@@ -2,10 +2,10 @@
 Plugin for [BitBar](https://github.com/matryer/bitbar).
 The Russian Ruble exchange rates from Moscow Exchange.
 
-###Sign mode
+### Sign mode
 ![BitBar Example showing MOEX plugin](https://raw.github.com/romankrasavtsev/moex-bitbar-plugin/master/moex_sign.png)
 
-###Emoji mode
+### Emoji mode
 ![BitBar Example showing MOEX plugin](https://raw.github.com/romankrasavtsev/moex-bitbar-plugin/master/moex_emoji.png)
 
 ### Supported currencies
